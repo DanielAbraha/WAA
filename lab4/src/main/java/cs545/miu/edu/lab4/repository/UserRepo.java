@@ -1,7 +1,8 @@
-package cs545.miu.edu.lab3.repository;
+package cs545.miu.edu.lab4.repository;
 
 
-import cs545.miu.edu.lab3.domain.User;
+
+import cs545.miu.edu.lab4.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

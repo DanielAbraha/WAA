@@ -1,22 +1,20 @@
-package cs545.miu.edu.lab3.service.impl;
+package cs545.miu.edu.lab4.service.impl;
 
 
-import cs545.miu.edu.lab3.domain.Post;
-import cs545.miu.edu.lab3.domain.User;
-import cs545.miu.edu.lab3.repository.UserRepo;
-import cs545.miu.edu.lab3.service.UserService;
+
+import cs545.miu.edu.lab4.domain.Post;
+import cs545.miu.edu.lab4.domain.User;
+import cs545.miu.edu.lab4.repository.UserRepo;
+import cs545.miu.edu.lab4.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.Column;
 import javax.transaction.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Transactional
 @Service
-//@Component
 public class UserServiceImpl implements UserService {
 
     @Autowired
