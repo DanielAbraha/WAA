@@ -25,4 +25,24 @@ public class PostServiceImpl implements PostService {
         var posts = postRepo.findAll();
         return posts.stream().filter(p->p.getTitle().equals(title)).collect(Collectors.toList());
     }
+
+    @Override
+    public List<Post> getAll() {
+        return postRepo.findAll();
+    }
+
+    @Override
+    public void deletePost(long id) {
+        postRepo.deleteById(id);
+    }
+
+    @Override
+    public Post getById(long id) {
+        return postRepo.findById(id).orElse(null);
+    }
+
+    @Override
+    public void savePost(Post post) {
+        postRepo.save(post);
+    }
 }
